@@ -1,3 +1,7 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
 body{
     background-image: url("img/background-coding-image.jpg");
     background-repeat: no-repeat;
@@ -7,8 +11,16 @@ body{
 }
 .navbar {
 	font-size: 14px;
-	background: white;
+	background-color: white;
+	border: 0px 0px 1px 0px;
+	border-color: rgb(224, 206, 191);
 }
+.navbar-inverse .navbar-nav li .myNavbar-link:hover{
+	color: rgb(184, 110, 83);
+}
+.navbar-inverse .navbar-nav .myNavbar-link, .navbar-inverse .navbar-nav .myNavbar-link:visited {
+	color: black;
+} 
 .main-logo {
 	width: 100px;
 	padding-top: 200px;
@@ -22,40 +34,112 @@ body{
 	font-weight: 800;
 	padding-bottom: 100px;
 }
-.about {
+.white {
 	background: white;
 	width: 100%;
-	padding: 150px 50px 100px 20%;
+	padding: 100px 100px 100px 20%;
 	text-align: right;
 }
-.about-title{
-	width: 155px;
+.skills {
+	background: white;
+	width: 100%;
+	padding: 100px 100px;
+	text-align: right;
+}
+.photo-img {
+	width: 120px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+	border: 3px solid rgb(224, 206, 191);
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+.section-title{
+	height: 41px;
+}
+.right-text{
+	padding-top: 25px;
+}
+.transparent {
+	width: 100%;
+	padding: 150px 100px 150px 100px;
+	text-align: left;
+}
+h4 {
+	color: rgb(184, 110, 83);
+	font-weight: 700;
+}
+ul {
+	list-style-type: none;
+}
+.form-title, .form-content, .form-submit {
+	border: 1px solid rgb(184, 110, 83);
+}
+::placeholder {
+	color: rgb(224, 206, 191);
+}
+.form-title {
+	width: 250px;
+	margin-bottom: 10px;
+	margin-top: 3px;
+	padding-left: 5px;
+}
+.form-content {
+	width: 375px;
+	height: 100px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+.form-submit {
+	width: 100px;
+	background-color: rgb(184, 110, 83);
+	color: white;
+}
+.carousel {
+	width: 480px;
+}
+.left.carousel-control, .right.carousel-control {
+	background-image: none;
+}
+.carousel-caption {
+	top: 0;
+	bottom: auto;
+	text-align: right;
+}
+.carousel-indicators {
+	color: black;
 }
 
 @media (max-width:767px) { 
 	.custom-navbar .navbar-right {
-	    float: right;
-	    /* padding-right: 15px; */
-	}
-	.custom-navbar .nav.navbar-nav.navbar-right li {
 		float: right;
-		padding-left: 0px;
 	}
 	.custom-navbar .navbar-toggle {
 		float: left;
-	}
-	.custom-navbar .navbar-header {
-	    float: left;
-	    width: auto!important;
+		background-color: rgb(184, 110, 83);
+		border: 0px;
 	}
 	.custom-navbar .navbar-collapse {
 	    clear: both;
-	    float: none;
+		float: none;
 	}
 	.navbar-brand {
 		padding-left: 0px;
 	}
-	.navbar-right {
-		padding-left: 0px;
+	.custom-navbar .navbar-toggle .icon-bar {
+		background-color: rgb(224, 206, 191);
+	}
+	.project-box{
+		width: 100%;
+	}
+	.carousel {
+		width: 100%;
+	}
+	.form-title {
+		width: 44%;
+	}
+	.form-content {
+		width: 66%;
 	}
 }
