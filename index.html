@@ -23,6 +23,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800,900" rel="stylesheet">
 </head>
 <body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<nav class="navbar navbar-inverse navbar-fixed-top custom-navbar" role="navigation">
 			<div class="container-fluid">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -45,10 +46,10 @@
 				<!-- the collapsing menu -->
 				<div class="collapse navbar-collapse navbar-left" id="navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a class="myNavbar-link" href="#">home</a></li>
+						<li><a class="myNavbar-link" href="#home">home</a></li>
 						<li><a class="myNavbar-link" href="#about">about</a></li>
 						<li><a class="myNavbar-link" href="#projects">projects</a></li>
-						<li><a class="myNavbar-link" href="#services">skills</a></li>
+						<li><a class="myNavbar-link" href="#skills">skills</a></li>
 						<li><a class="myNavbar-link" href="#contact">contact</a></li>
 						<!-- <li><a class="myNavbar-link" href="files/mariarojo-resume.pdf" target="_blank">resume</a></li> -->
 					</ul>
@@ -57,8 +58,9 @@
 			</div>
 			<!--/.container -->
 		</nav>
+	</body>
 
-		<div class="container">
+		<div class="container" id="home">
 			<img class="center-block main-logo" src="img/mainlogo.png">
 			<img class="center-block name" src="img/name.png">
 			<p class="text-center title">FRONT END WEB DEVELOPER</p>
@@ -69,58 +71,100 @@
 			<img class="section-title" src="img/about.png">
 
 			<p class="right-text">
-				Duis sodales turpis nisi, at lobortis sem rutrum vitae. 
-				Donec consectetur est elit, vel vehicula nisi rhoncus in. 
-				Phasellus ullamcorper ornare lacinia. 
-				Aenean maximus velit massa, non accumsan nisi facilisis et. 
-				Ut imperdiet sollicitudin arcu, semper sodales elit vulputate eu. 
-				Vestibulum dui nisl, consectetur a accumsan ut, sollicitudin in eros. 
-				Pellentesque elementum mattis felis at pretium.
+					I'm a recently graduated Front End Web Developer from Coding Dojo, 
+					dedicating over 1000 hours in 3 full stacks that include the following 
+					technologies: Python, MongoDB, Express, Angular, Node.js, iOS, and 
+					currently learning React. With each stack I have built numerous web 
+					applications utilizing front-end and back-end technologies. I have 
+					also worked for an e-commerce company, specializing in customized 
+					stationery for 8 years as a Senior Production Designer. There I gained 
+					experience working with clients to review their projects to ensure 
+					print readiness and client satisfaction. I have a strong foundation in 
+					design, am attentive to detail, and am passionate about front end 
+					development. My core goal is to strengthen and expand my technical 
+					skill set and align it with a design-minded company that positively 
+					impacts society. 
 			</p>
 		</div>
 
 		<div class="container transparent" id="projects">
 			<img class="section-title" src="img/projects.png">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="files/rma-photo-section.gif">
-						<div class="carousel-caption">
-							Take a Photo
+
+			<div class="row">
+				<div class="col-md-7 fixed-column">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="files/rma-photo-section.gif">
+								<div class="carousel-caption">
+									1. Take a Photo
+								</div>
+							</div>
+							<!-- End Active -->
+							<div class="item">
+								<img src="files/rma-info-section.gif">
+								<div class="carousel-caption">
+									2. Log Information
+								</div>
+							</div>
+							<div class="item">
+								<img src="files/rma-map-section.gif">
+								<div class="carousel-caption">
+									3. Drop a Pin
+								</div>
+							</div>
 						</div>
+						<!-- Start Slider Controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
-					<!-- End Active -->
-					<div class="item">
-						<img src="files/rma-info-section.gif">
-						<div class="carousel-caption">
-							Log Information
-						</div>
-					</div>
-					<div class="item">
-						<img src="files/rma-map-section.gif">
-						<div class="carousel-caption">
-							Drop a Pin
-						</div>
-					</div>
+
 				</div>
-				<!-- Start Slider Controls -->
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
+
+				<div class="col-md-6 transparent-box">
+					<h3>Record My Accident
+					</h3>
+					<p class="description-text">
+						An iOS app to help keep track of key information
+						when involved with a car accident. 
+					</p>
+					<p>
+						<span class="project-category">Key Features:</span> A user can take two photos of the accident, 
+						type in the other driver’s information, and drop a pin on 
+						the map of the current location. Data will be saved in the 
+						iOS device’s photo library, and in the app.
+					</p>
+					<p>
+						<span class="project-category">My Role:</span> Designed the logo and front end, created the forms 
+						for record keeping with the ability to save, and implemented 
+						the scrolling ability.
+					</p>
+					<p>
+						<span class="project-category">Details:</span> Built with a team of 3 developers in one day, 
+						using Swift 4, Xcode, CoreData, CoreLocation, MapKit and ImagePicker.
+					</p>
+					<p>
+						<a href="https://github.com/kegplant/Hackathon_iOS_CoreLocation" target="_blank">
+							Github
+						</a>
+					</p>
+				</div>
+
 			</div>
 		</div>
 
-		<div class="container skills" id="contact">
+		<div class="container skills" id="skills">
 			<img class="section-title" src="img/skills.png">
 			<div class="row">
 				<div class="col-sm-3">
@@ -150,7 +194,6 @@
 						<li>JQuery</li>
 						<li>Socket.io</li>
 						<li>Bootstrap</li>
-						<li>Interact.js</li>
 					</ul>
 				</div>
 				<div class="col-sm-3">
@@ -199,14 +242,14 @@
 			</div>
 		</div>
 
-		<div class="container transparent">
+		<div class="container transparent" id="contact">
 				<img class="section-title" src="img/contact.png">
-				<form>
+				<form action=mailto:mariatrojo@gmail.com method="POST">
 					<div>
-						<input class="form-title" type="text" name="title" placeholder="title">
+						<input class="form-title" type="text" name="name" placeholder="name">
 					</div>
 					<div>
-						<textarea class="form-content" name="content" placeholder="message"></textarea>
+						<textarea class="form-content" name="message" placeholder="message"></textarea>
 					</div>
 					<div>
 						<input class="form-submit" type="submit" value="submit">
