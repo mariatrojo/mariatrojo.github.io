@@ -21,6 +21,38 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="image/x-icon" href="img/browser-icon.png">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800,900" rel="stylesheet">
+	
+	<script type="text/javascript">
+		// $('.hover').on({
+		// 	'click': function(){
+		// 		$('.hover').attr('src','second.jpg');
+		// 	}
+		// });
+		$(document).ready(function () {
+
+			$("#icon-1").hover(function (event) {
+				$(this).attr('src','img/cv-icon-hover.png');
+			}, function (event) {
+				$(this).attr('src','img/cv-icon.png');
+			});
+
+			$("#icon-2").hover(function (event) {
+				$(this).attr('src','img/github-hover.png');
+			}, function (event) {
+				$(this).attr('src','img/github.png');
+			});
+
+			$("#icon-3").hover(function (event) {
+				$(this).attr('src','img/linkedin-hover.png');
+			}, function (event) {
+				$(this).attr('src','img/linkedin.png');
+			});
+
+		});
+
+
+
+	</script>
 </head>
 <body>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -34,13 +66,13 @@
 				</button>
 				<div class="navbar-right">
 					<a class="navbar-brand" rel="home" href="files/mariarojo-resume.pdf" target="_blank">
-						<img src="img/cv-icon.png" height="25">
+						<img id="icon-1" class="hover" src="img/cv-icon.png">
 					</a>
 					<a class="navbar-brand" rel="home" href="https://github.com/mariatrojo" target="_blank">
-						<img src="img/github.png" width="25" height="25">
+						<img id="icon-2" class="hover" src="img/github.png">
 					</a>
 					<a class="navbar-brand" rel="home" href="https://www.linkedin.com/in/mariatrojo/" target="_blank">
-						<img src="img/linkedin.png" width="25" height="25">
+						<img id="icon-3" class="hover" src="img/linkedin.png">
 					</a>
 				</div>
 				<!-- the collapsing menu -->

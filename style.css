@@ -4,7 +4,7 @@
 	;
 }
 body{
-    background-image: url("img/background-coding-image.jpg");
+    background-image: url("img/coding-bg.jpg");
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -24,11 +24,12 @@ h3 {
 .navbar {
 	font-size: 14px;
 	background-color: white;
-	border: 0px 0px 1px 0px;
-	border-color: rgb(224, 206, 191);
+	border: 0px;
+	/* border-color: white; */
+	box-shadow:0px 0px 10px rgb(185, 185, 185);
 }
 .navbar-inverse .navbar-nav li .myNavbar-link:hover{
-	background: rgb(184, 110, 83);
+	background: rgb(224, 206, 191);
 	color: white;
 }
 .navbar-inverse .navbar-nav .myNavbar-link {
@@ -37,6 +38,9 @@ h3 {
 } 
 .navbar-inverse .navbar-nav .myNavbar-link:visited {
 	background-color: rgb(184, 110, 83);
+}
+.hover {
+	height: 25px;
 }
 .main-logo {
 	width: 100px;
@@ -56,12 +60,14 @@ h3 {
 	width: 100%;
 	padding: 100px 100px 100px 20%;
 	text-align: right;
+	box-shadow:0px 0px 10px rgb(185, 185, 185);
 }
 .skills {
 	background: white;
 	width: 100%;
 	padding: 100px 100px;
 	text-align: right;
+	box-shadow:0px 0px 10px rgb(185, 185, 185);
 }
 .photo-img {
 	width: 120px;
