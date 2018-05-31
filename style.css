@@ -65,6 +65,9 @@ h3 {
 	text-align: right;
 	box-shadow:0px 0px 10px rgb(185, 185, 185);
 }
+.about-text {
+	font-size: 16px;
+}
 .skills {
 	background: white;
 	width: 100%;
@@ -152,38 +155,52 @@ ul {
 .description-text {
 	font-size: 16px;
 }
+.right-align {
+	float: right;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
 
 
 
 /* SLIDE OUT INFO */
 
-.rma-details {
+.rma-details, .lu-details, .tw-details {
 	position: absolute;
 	background-color: rgb(224, 206, 191);
 	z-index: 1000;
+	width: 480px;
+	padding: 20px 20px 10px 20px;
 }
 
-.slideOutTip{
+/* .slideOutTip{ */
 	/* The main wrapping div of the slideout tips */
 	/* position:absolute; */
 	/* padding:5px; */
 	/* top:0px;
 	left:0px; */
 	/* background-color:white; */
-	font-size:13px;
+	/* font-size:13px;
 	color:black;
-	overflow:hidden;
-	/* width: 100%; */
+	overflow:hidden; */
 	/* height:40px; */
 	/* z-index: 1; */
-}
+/* } */
 
 /* .slideOutTip:hover{
 	background: white;
 } */
+.tipIcon, .tipTitle, .right-align {
+	display: inline-block;
+}
 
 /* The holder for the title and the icon: */
-.tipVisible{ cursor:pointer; height:22px; }
+.tipVisible{ 
+	cursor:pointer; 
+	height:22px;
+	width: 480px;
+}
 
 .tipTitle{
 	float:left;
@@ -274,5 +291,8 @@ ul {
 	}
 	.form-content {
 		width: 66%;
+	}
+	.rma-details, .lu-details, .tw-details {
+		width: 100%;
 	}
 }
