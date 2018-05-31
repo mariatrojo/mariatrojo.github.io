@@ -39,6 +39,9 @@ h3 {
 	color: black;
 	text-decoration-line: none;
 } 
+.navbar-inverse .navbar-nav .myNavbar-link:focus {
+	background-color: rgb(184, 110, 83);
+}
 .navbar-inverse .navbar-nav .myNavbar-link:visited {
 	background-color: rgb(184, 110, 83);
 }
