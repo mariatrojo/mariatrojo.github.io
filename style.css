@@ -1,10 +1,16 @@
 * {
-	padding: 0px;
-	margin: 0px;
-	;
-}
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
 body{
-    background-image: url("img/coding-bg.jpg");
+    background: url("img/coding-bg.jpg");
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -17,33 +23,42 @@ h3 {
 	margin-top: 0px;
 	color: white;
 }
-:any-link:hover {
+a:link {
+	color: white;
+	text-decoration: underline;
+}
+a:visited {
+	color: red;
+}
+a:hover {
 	color: rgb(184, 110, 83);
 }
-:any-link {
-	color: white;
-	text-decoration-line: underline;
+a:active {
+	background: blue;
 }
+
 .navbar {
 	font-size: 14px;
 	background-color: white;
 	border: 0px;
-	/* border-color: white; */
 	box-shadow:0px 0px 10px rgb(185, 185, 185);
+}
+.navbar-inverse .navbar-nav li.active a{ 
+    background: rgb(184, 110, 83); 
+}
+.navbar-inverse .navbar-nav .myNavbar-link {
+	color: black;
+	text-decoration: none;
+} 
+.navbar-inverse .navbar-nav .myNavbar-link:active {
+	background: rgb(184, 110, 83);
+}
+.navbar-inverse .navbar-nav .myNavbar-link:visited {
+	background: rgb(184, 110, 83);
 }
 .navbar-inverse .navbar-nav li .myNavbar-link:hover{
 	background: rgb(224, 206, 191);
 	color: white;
-}
-.navbar-inverse .navbar-nav .myNavbar-link {
-	color: black;
-	text-decoration-line: none;
-} 
-.navbar-inverse .navbar-nav .myNavbar-link:focus {
-	background-color: rgb(184, 110, 83);
-}
-.navbar-inverse .navbar-nav .myNavbar-link:visited {
-	background-color: rgb(184, 110, 83);
 }
 .hover {
 	height: 25px;
@@ -130,12 +145,15 @@ ul {
 }
 .slide-width {
 	width: 480px;
-	/* padding-top: 33px; */
 	padding-bottom: 20px;
 }
 .left.carousel-control, .right.carousel-control {
 	background-image: none;
 }
+.carousel {
+	border: 1px solid transparent;
+}
+
 .carousel-caption {
 	top: 0;
 	bottom: auto;
@@ -152,7 +170,6 @@ ul {
 	width: 500px;
 }
 .transparent-box {
-	/* background: rgb(224, 206, 191); */
 	margin-left: 10px;
 }
 .description-text {
@@ -161,7 +178,7 @@ ul {
 .right-align {
 	float: right;
 	font-size: 16px;
-	display: inline-block;
+	/* display: inline-block; */
 	vertical-align: top;
 }
 
@@ -177,23 +194,6 @@ ul {
 	padding: 20px 20px 10px 20px;
 }
 
-/* .slideOutTip{ */
-	/* The main wrapping div of the slideout tips */
-	/* position:absolute; */
-	/* padding:5px; */
-	/* top:0px;
-	left:0px; */
-	/* background-color:white; */
-	/* font-size:13px;
-	color:black;
-	overflow:hidden; */
-	/* height:40px; */
-	/* z-index: 1; */
-/* } */
-
-/* .slideOutTip:hover{
-	background: white;
-} */
 .tipIcon, .tipTitle, .right-align {
 	display: inline-block;
 }
@@ -224,7 +224,6 @@ ul {
 	height:21px;
 	float:left;
 	background-color:rgb(184, 110, 83);
-	/* border:1px solid white; */
 	margin-right:8px;
 	
 	/* CSS3 Rounded corners */
@@ -235,7 +234,6 @@ ul {
 }
 
 .plusIcon{
-	/* The plus icon */
 	width:13px;
 	height:13px;
 	background:url('img/plus.gif') no-repeat center center;
@@ -280,15 +278,21 @@ ul {
 	.custom-navbar .navbar-toggle .icon-bar {
 		background-color: rgb(224, 206, 191);
 	}
+	.white, .transparent, .skills {
+		padding: 5%;
+	}
+	.right-align {
+		padding-right: 6%;
+	}
 	.project-box{
 		width: 100%;
 	}
 	.carousel {
 		width: 100%;
 	}
-	.fixed-column {
+	/* .fixed-column {
 		width: 100%;
-	}
+	} */
 	.form-title {
 		width: 44%;
 	}
