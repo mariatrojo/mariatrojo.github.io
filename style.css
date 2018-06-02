@@ -175,11 +175,9 @@ ul {
 .description-text {
 	font-size: 16px;
 }
-.right-align {
-	float: right;
+.pull-right {
 	font-size: 16px;
-	/* display: inline-block; */
-	vertical-align: top;
+	display: inline-block;
 }
 
 
@@ -258,7 +256,6 @@ ul {
 
 .main > p{ display:none; }
 
-
 @media (max-width:767px) { 
 	.custom-navbar .navbar-right {
 		float: right;
@@ -278,28 +275,42 @@ ul {
 	.custom-navbar .navbar-toggle .icon-bar {
 		background-color: rgb(224, 206, 191);
 	}
-	.white, .transparent, .skills {
+	.white, .skills {
 		padding: 5%;
 	}
-	.right-align {
-		padding-right: 6%;
+	.transparent {
+		padding: 7%;
 	}
 	.project-box{
 		width: 100%;
 	}
-	.carousel {
-		width: 100%;
-	}
-	/* .fixed-column {
+	/* .carousel {
 		width: 100%;
 	} */
-	.form-title {
+	/* .form-title {
 		width: 44%;
 	}
 	.form-content {
 		width: 66%;
-	}
+	} */
 	.rma-details, .lu-details, .tw-details {
 		width: 100%;
+	}
+	.fixed-column {
+		width: 100%;
+	}
+}
+@media (max-width:550px) { 
+	.carousel, .tipVisible {
+		width: 100%;
+	}
+	.form-title {
+		width: 50%;
+	}
+	.form-content {
+		width: 76%;
+	}
+	.transparent {
+		padding: 5%;
 	}
 }
