@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Maria T. Rojo - Web Developer
-	</title>
+	<meta name="description" content="Maria T. Rojo - Web Developer specializing in Front End, 
+	HTML4, CSS3, JavaScript, Responsive Web Design, jQuery, Python and Swift">
+	<title>Maria T. Rojo - Web Developer</title>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -77,14 +78,23 @@
 			$( "#rma-project" ).click(function() {
 				$( ".rma-details" ).slideToggle( "slow" );
 			});
+			$( ".rma-details" ).click(function() {
+				$( ".rma-details" ).slideToggle( "slow" );
+			});
 
 			$(".lu-details").hide();
 			$( "#lu-project" ).click(function() {
 				$( ".lu-details" ).slideToggle( "slow" );
 			});
+			$( ".lu-details" ).click(function() {
+				$( ".lu-details" ).slideToggle( "slow" );
+			});
 
 			$(".tw-details").hide();
 			$( "#tw-project" ).click(function() {
+				$( ".tw-details" ).slideToggle( "slow" );
+			});
+			$( ".tw-details" ).click(function() {
 				$( ".tw-details" ).slideToggle( "slow" );
 			});
 
@@ -122,6 +132,7 @@
 						<li><a class="myNavbar-link" href="#projects">projects</a></li>
 						<li><a class="myNavbar-link" href="#skills">skills</a></li>
 						<li><a class="myNavbar-link" href="#contact">contact</a></li>
+						<li><a class="myNavbar-link" href="files/mariarojo-resume.pdf" target="_blank">resume</a></li>
 						<!-- <li><a class="myNavbar-link" href="files/mariarojo-resume.pdf" target="_blank">resume</a></li> -->
 					</ul>
 				</div>
@@ -543,6 +554,7 @@
 
 		<div class="container transparent" id="contact">
 				<img class="section-title" src="img/contact.png" alt="Contact">
+
 				<form action=mailto:mariatrojo@gmail.com method="POST">
 					<div>
 						<input class="form-title" type="text" name="name" placeholder="name">

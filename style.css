@@ -127,13 +127,13 @@ ul {
 	color: rgb(224, 206, 191);
 }
 .form-title {
-	width: 250px;
+	width: 300px;
 	margin-bottom: 10px;
 	margin-top: 3px;
 	padding-left: 5px;
 }
 .form-content {
-	width: 375px;
+	width: 420px;
 	height: 100px;
 	margin-bottom: 5px;
 	padding-left: 5px;
@@ -187,12 +187,12 @@ ul {
 .rma-details, .lu-details, .tw-details {
 	position: absolute;
 	background-color: rgb(224, 206, 191);
-	z-index: 1000;
+	z-index: 16;
 	width: 480px;
 	padding: 20px 20px 10px 20px;
 }
 
-.tipIcon, .tipTitle, .right-align {
+.tipIcon, .tipTitle {
 	display: inline-block;
 }
 
@@ -210,7 +210,6 @@ ul {
 	font-weight:bold;
 	white-space:nowrap;
 	line-height:22px;
-	/* padding-right:5px; */
 }
 
 .main {
@@ -281,22 +280,7 @@ ul {
 	.transparent {
 		padding: 7%;
 	}
-	.project-box{
-		width: 100%;
-	}
-	/* .carousel {
-		width: 100%;
-	} */
-	/* .form-title {
-		width: 44%;
-	}
-	.form-content {
-		width: 66%;
-	} */
-	.rma-details, .lu-details, .tw-details {
-		width: 100%;
-	}
-	.fixed-column {
+	.project-box, .fixed-column {
 		width: 100%;
 	}
 }
@@ -305,12 +289,15 @@ ul {
 		width: 100%;
 	}
 	.form-title {
-		width: 50%;
+		width: 55%;
 	}
 	.form-content {
-		width: 76%;
+		width: 80%;
 	}
 	.transparent {
 		padding: 5%;
+	}
+	.rma-details, .lu-details, .tw-details {
+		width: 100%;
 	}
 }
