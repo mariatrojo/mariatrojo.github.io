@@ -28,13 +28,13 @@ a:link {
 	text-decoration: underline;
 }
 a:visited {
-	color: red;
+	color: white;
 }
 a:hover {
 	color: rgb(184, 110, 83);
 }
 a:active {
-	background: blue;
+	text-decoration: none;
 }
 
 .navbar {
