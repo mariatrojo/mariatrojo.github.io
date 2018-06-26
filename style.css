@@ -9,6 +9,9 @@
 	padding: 0;
 	margin: 0;
 	}
+html, body {
+	height: 100%;
+}
 body{
     background: url("img/coding-bg.jpg");
     background-repeat: no-repeat;
@@ -63,9 +66,13 @@ a:active {
 .hover {
 	height: 25px;
 }
+.hero-div {
+	height: 100%;
+	position: relative;
+	top: 40%;
+}
 .main-logo {
 	width: 100px;
-	padding-top: 200px;
 }
 .name {
 	width: 350px;
@@ -74,7 +81,6 @@ a:active {
 .title {
 	font-size: 20px;
 	font-weight: 800;
-	padding-bottom: 100px;
 }
 .white {
 	background: white;
@@ -104,6 +110,7 @@ a:active {
 }
 .section-title{
 	height: 41px;
+	margin-bottom: 15px;
 }
 .right-text{
 	padding-top: 25px;
@@ -144,7 +151,6 @@ ul {
 	color: white;
 }
 .slide-width {
-	width: 480px;
 	padding-bottom: 20px;
 }
 .left.carousel-control, .right.carousel-control {
@@ -167,7 +173,7 @@ ul {
 	padding: 0px 5px;
 }
 .fixed-column {
-	width: 500px;
+	width: 350px;
 }
 .transparent-box {
 	margin-left: 10px;
@@ -178,9 +184,15 @@ ul {
 .pull-right {
 	font-size: 16px;
 	display: inline-block;
+	margin-left: 15px;
 }
 
-
+.project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
+	width: 330px;
+}
+.wall-height {
+	height: 50px;
+}
 
 /* SLIDE OUT INFO */
 
@@ -188,7 +200,6 @@ ul {
 	position: absolute;
 	background-color: rgb(224, 206, 191);
 	z-index: 16;
-	width: 480px;
 	padding: 20px 20px 10px 20px;
 }
 
@@ -200,7 +211,6 @@ ul {
 .tipVisible{ 
 	cursor:pointer; 
 	height:22px;
-	width: 480px;
 }
 
 .tipTitle{
@@ -251,6 +261,15 @@ ul {
 	transform:rotate(45deg);
 }
 
+.copyright {
+	background: white;
+	width: 100%;
+	padding: 20px;
+	color: rgb(184, 110, 83);
+	text-align: center;
+	font-weight: bold;
+}
+
 /* Hiding the original paragraphs if they have not been replaced (JS disabled): */
 
 .main > p{ display:none; }
@@ -280,14 +299,14 @@ ul {
 	.transparent {
 		padding: 7%;
 	}
-	.project-box, .fixed-column {
+	.project-box {
 		width: 100%;
 	}
 }
 @media (max-width:550px) { 
-	.carousel, .tipVisible {
+	/* .carousel, .tipVisible {
 		width: 100%;
-	}
+	} */
 	.form-title {
 		width: 55%;
 	}
@@ -297,7 +316,7 @@ ul {
 	.transparent {
 		padding: 5%;
 	}
-	.rma-details, .lu-details, .tw-details {
+	/* .rma-details, .lu-details, .tw-details {
 		width: 100%;
-	}
+	} */
 }
