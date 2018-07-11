@@ -22,71 +22,23 @@
 
 		$(document).ready(function () {
 
-			$("#icon-1").hover(function (event) {
+			$(".icon-1").hover(function (event) {
 				$(this).attr('src','img/cv-icon-hover.png');
 			}, function (event) {
 				$(this).attr('src','img/cv-icon.png');
 			});
 
-			$("#icon-2").hover(function (event) {
+			$(".icon-2").hover(function (event) {
 				$(this).attr('src','img/github-hover.png');
 			}, function (event) {
 				$(this).attr('src','img/github.png');
 			});
 
-			$("#icon-3").hover(function (event) {
+			$(".icon-3").hover(function (event) {
 				$(this).attr('src','img/linkedin-hover.png');
 			}, function (event) {
 				$(this).attr('src','img/linkedin.png');
 			});
-
-
-			//SLIDE OUT INFO
-
-			/* Replacing all the paragraphs */
-			$('.main div').replaceWith(function(){
-			
-				/* The style, class and title attributes of the p are copied to the slideout: */
-				
-				return '\
-				<div class="slideOutTip '+$(this).attr('class')+'" style="'+$(this).attr('style')+'">\
-					\
-					<div class="tipVisible">\
-						<div class="tipIcon"><div class="plusIcon"></div></div>\
-						<p class="tipTitle">'+$(this).attr('title')+'</p>\
-					</div>\
-					\
-					<div class="slideOutContent">\
-						<p>'+$(this).html()+'</p>\
-					</div>\
-				</div>';
-			});
-
-
-			//TEST
-			// $(".rma-details").hide();
-			// $( "#rma-project" ).click(function() {
-			// 	$( ".rma-details" ).slideToggle( "slow" );
-			// });
-			// $( ".rma-details" ).click(function() {
-			// 	$( ".rma-details" ).slideToggle( "slow" );
-			// });
-
-			// $(".lu-details").hide();
-			// $( "#lu-project" ).click(function() {
-			// 	$( ".lu-details" ).slideToggle( "slow" );
-			// });
-			// $( ".lu-details" ).click(function() {
-			// 	$( ".lu-details" ).slideToggle( "slow" );
-			// });
-
-			// $(".tw-details").hide();
-			// $( "#tw-project" ).click(function() {
-			// 	$( ".tw-details" ).slideToggle( "slow" );
-			// });
-			// $( ".tw-details" ).click(function() {
-			// 	$( ".tw-details" ).slideToggle( "slow" );
-			// });
 
 		});
 
@@ -105,13 +57,13 @@
 				</button>
 				<div class="navbar-right">
 					<a class="navbar-brand" rel="home" href="files/mariarojo-resume.pdf" target="_blank" title="Maria T. Rojo's Resume PDF">
-						<img id="icon-1" class="hover" src="img/cv-icon.png" alt="resume">
+						<img class="icon-1 hover" src="img/cv-icon.png" alt="resume">
 					</a>
 					<a class="navbar-brand" rel="home" href="https://github.com/mariatrojo" target="_blank" title="Maria T. Rojo's Github Profile">
-						<img id="icon-2" class="hover" src="img/github.png" alt="github">
+						<img class="icon-2 hover" src="img/github.png" alt="github">
 					</a>
 					<a class="navbar-brand" rel="home" href="https://www.linkedin.com/in/mariatrojo/" target="_blank" title="Maria T. Rojo's LinkedIn Profile">
-						<img id="icon-3" class="hover" src="img/linkedin.png" alt="linkedin">
+						<img class="icon-3 hover" src="img/linkedin.png" alt="linkedin">
 					</a>
 				</div>
 				<!-- the collapsing menu -->
@@ -142,19 +94,19 @@
 			<img class="section-title" src="img/about.png" alt="about">
 
 			<p class="right-text about-text">
-					I'm a recently graduated Web Developer based in the Bay Area, California, 
-					dedicating over 1000 hours in 3 full stacks that include the following 
-					technologies: Python, MEAN (MongoDB, Express, Angular, Node.js), iOS, and 
-					currently learning React. With each stack I have built numerous web 
-					applications utilizing front-end and back-end technologies. I have 
-					also worked for an e-commerce company, specializing in customized 
-					stationery for 8 years as a Senior Production Designer. There I gained 
-					experience working with clients to review their projects to ensure 
-					print readiness and client satisfaction. I have a strong foundation in 
-					design, am attentive to detail, and am passionate about front end 
-					development. My core goal is to strengthen and expand my technical 
-					skill set and align it with a design-minded company that positively 
-					impacts society. 
+				I'm a recently graduated Web Developer based in the Bay Area, California, 
+				dedicating over 1000 hours in 3 full stacks that include the following 
+				technologies: Python, MEAN (MongoDB, Express, Angular, Node.js), iOS, and 
+				currently learning React. With each stack I have built numerous web 
+				applications utilizing front-end and back-end technologies. I have 
+				also worked for an e-commerce company, specializing in customized 
+				stationery for 8 years as a Senior Production Designer. There I gained 
+				experience working with clients to review their projects to ensure 
+				print readiness and client satisfaction. I have a strong foundation in 
+				design, am attentive to detail, and am passionate about front end 
+				development. My core goal is to strengthen and expand my technical 
+				skill set and align it with a design-minded company that positively 
+				impacts society. 
 			</p>
 		</div>
 
@@ -165,7 +117,7 @@
 
 
 			<div class="row row-projects">
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 
 				
 					<div class="tipVisible">
@@ -235,7 +187,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 					<div class="lu-details">
 						<p class="description-text">
 							An application for a nonprofit business called LearnUp, 
@@ -259,8 +211,8 @@
 							developers, using JavaScript, MongoDB, Express, Node.js, Socket.io, 
 							JQuery, Boostrap, Interact.js, and Visual Studio Code.
 						</p>
-						<a class="align-left" href="https://github.com/mariatrojo/LearnUpProject" target="_blank">
-							Github
+						<a class="align-left" href="https://github.com/LearnUpCDTeam/LearnUp" target="_blank">
+							<input class="button-link" value="Github">
 						</a>
 					</div>
 				
@@ -270,7 +222,7 @@
 			</div>
 
 			<div class="row row-projects">
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 					<div class="tipVisible">
 						<!-- <div class="tipIcon" id="tw-project">
 							<div class="plusIcon"></div>
@@ -340,7 +292,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 					<div class="tw-details">
 
 						<p class="description-text">
@@ -360,10 +312,10 @@
 
 						<div class="align-left">
 							<a class="right-space" href="http://18.216.43.171/" target="_blank">
-								Website 
+								<input class="button-link" value="Website">
 							</a>
 							<a href="https://github.com/mariatrojo/The_Wall" target="_blank">
-								Github
+								<input class="button-link" value="Github">
 							</a>
 						</div>
 					</div>
@@ -373,7 +325,7 @@
 
 			<div class="row row-projects">
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 					<div class="tipVisible">
 						<!-- <div class="tipIcon" id="rma-project">
 							<div class="plusIcon"></div>
@@ -429,7 +381,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 fixed-column">
 
 					<div class="rma-details">
 						<p class="description-text">
@@ -452,7 +404,7 @@
 						</p>
 
 						<a class="align-left" href="https://github.com/kegplant/Hackathon_iOS_CoreLocation" target="_blank">
-							Github
+							<input class="button-link" value="Github">
 						</a>
 					</div>
 				
@@ -541,22 +493,39 @@
 		</div>
 
 		<div class="container transparent" id="contact">
-			<h2 class="contact-title">
-				Thanks for visiting! 
-			</h2>
-				<img class="section-title" src="img/contact.png" alt="Contact">
+			<h1 class="contact-title">
+				Thanks for visiting!
+			</h1>
+			<h4>
+				Let's work together! Please feel free to contact me or find more of my work below. 
+			</h4>
+			<p class="contact-note">
+				<a class="icon-contact-link" href="files/mariarojo-resume.pdf" target="_blank" title="Maria T. Rojo's Resume PDF">
+					<img class="hover" src="img/cv-icon.png" alt="resume">
+				</a>
+				<a class="icon-contact-link" href="https://github.com/mariatrojo" target="_blank" title="Maria T. Rojo's Github Profile">
+					<img class="hover" src="img/github.png" alt="github">
+				</a>
+				<a class="icon-contact-link" href="https://www.linkedin.com/in/mariatrojo/" target="_blank" title="Maria T. Rojo's LinkedIn Profile">
+					<img class="hover" src="img/linkedin.png" alt="linkedin">
+				</a>
+			</p>
 
-				<form action=mailto:mariatrojo@gmail.com method="POST">
-					<div>
-						<input class="form-title" type="text" name="name" placeholder="name">
-					</div>
-					<div>
-						<textarea class="form-content" name="message" placeholder="message"></textarea>
-					</div>
-					<div>
-						<input class="form-submit" type="submit" value="submit">
-					</div>
-				</form>
+
+
+			<img class="section-title" src="img/contact.png" alt="Contact">
+
+			<form action=mailto:mariatrojo@gmail.com method="POST">
+				<div>
+					<input class="form-title" type="text" name="name" placeholder="name">
+				</div>
+				<div>
+					<textarea class="form-content" name="message" placeholder="message"></textarea>
+				</div>
+				<div>
+					<input class="button-link" type="submit" value="submit">
+				</div>
+			</form>
 
 
 		</div>

@@ -30,8 +30,14 @@ a:link {
 	color: white;
 	text-decoration: underline;
 }
+.icon-contact-link:link {
+	text-decoration: none;
+	position: relative;
+	bottom: 10px;
+	padding-right: 5px;
+}
 a:visited {
-	color: white;
+	color: rgb(184, 110, 83);
 }
 a:hover {
 	color: rgb(184, 110, 83);
@@ -127,7 +133,7 @@ h4, .project-category {
 ul {
 	list-style-type: none;
 }
-.form-title, .form-content, .form-submit {
+.form-title, .form-content, .button-link {
 	border: 1px solid rgb(184, 110, 83);
 }
 ::placeholder {
@@ -145,10 +151,11 @@ ul {
 	margin-bottom: 5px;
 	padding-left: 5px;
 }
-.form-submit {
+.button-link {
 	width: 100px;
 	background-color: rgb(184, 110, 83);
 	color: white;
+	text-align: center;
 }
 .slide-width {
 	padding-bottom: 20px;
@@ -173,7 +180,7 @@ ul {
 	padding: 0px 5px;
 }
 .fixed-column {
-	width: 600px;
+	width: 500px;
 }
 .transparent-box {
 	margin-left: 10px;
@@ -190,7 +197,7 @@ ul {
 
 .project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
 	width: 500px;
-	/* width: 400px; */
+	/* width: 105%; */
 }
 .wall-height {
 	height: 50px;
@@ -275,8 +282,20 @@ ul {
 	font-weight: bold;
 }
 
-.contact-note, .contact-title {
+.contact-title {
 	color: rgb(184, 110, 83);
+	/* text-shadow:
+	#FFF 0px 0px 1px,
+	#FFF 0px 0px 1px,
+	#FFF 0px 0px 1px,
+	#FFF 0px 0px 1px,
+	#FFF 0px 0px 1px,
+	#FFF 0px 0px 1px;
+    -webkit-font-smoothing: antialiased; */
+
+}
+.contact-note {
+	padding-top: 10px;
 	padding-bottom: 50px;
 }
 
@@ -284,9 +303,12 @@ ul {
 	margin-right: 8px;
 }
 
-/* Hiding the original paragraphs if they have not been replaced (JS disabled): */
-
-.main > p{ display:none; }
+@media (max-width:1170px) { 
+	.rma-details, .lu-details, .tw-details {
+		height: auto;
+		padding: 0px;
+	}
+}
 
 @media (max-width:767px) { 
 	.custom-navbar .navbar-right {
@@ -313,7 +335,15 @@ ul {
 	.transparent {
 		padding: 7%;
 	}
-	.project-box {
+	.project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
+		max-width: 500px;
+		width: 100%;
+	}
+	.rma-details, .lu-details, .tw-details {
+		height: auto;
+		padding: 0px;
+	}
+	.col-sm-6 {
 		width: 100%;
 	}
 }
