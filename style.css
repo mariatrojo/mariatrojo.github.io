@@ -280,6 +280,10 @@ ul {
 	padding-bottom: 50px;
 }
 
+.right-space {
+	margin-right: 8px;
+}
+
 /* Hiding the original paragraphs if they have not been replaced (JS disabled): */
 
 .main > p{ display:none; }
