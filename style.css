@@ -173,7 +173,7 @@ ul {
 	padding: 0px 5px;
 }
 .fixed-column {
-	width: 350px;
+	width: 600px;
 }
 .transparent-box {
 	margin-left: 10px;
@@ -181,26 +181,31 @@ ul {
 .description-text {
 	font-size: 16px;
 }
-.pull-right {
+.align-left {
 	font-size: 16px;
-	display: inline-block;
-	margin-left: 15px;
+	display: block;
+	text-align: left;
+	margin-bottom: 5px;
 }
 
 .project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
-	width: 330px;
+	width: 500px;
+	/* width: 400px; */
 }
 .wall-height {
 	height: 50px;
 }
 
+.row-projects {
+	margin-bottom: 70px;
+}
+
 /* SLIDE OUT INFO */
 
 .rma-details, .lu-details, .tw-details {
-	position: absolute;
-	background-color: rgb(224, 206, 191);
-	z-index: 16;
-	padding: 20px 20px 10px 20px;
+	/* background-color: red; */
+	padding: 30px 20px 10px 20px;
+	height: 325px;
 }
 
 .tipIcon, .tipTitle {
@@ -270,6 +275,11 @@ ul {
 	font-weight: bold;
 }
 
+.contact-note, .contact-title {
+	color: rgb(184, 110, 83);
+	padding-bottom: 50px;
+}
+
 /* Hiding the original paragraphs if they have not been replaced (JS disabled): */
 
 .main > p{ display:none; }
@@ -304,9 +314,6 @@ ul {
 	}
 }
 @media (max-width:550px) { 
-	/* .carousel, .tipVisible {
-		width: 100%;
-	} */
 	.form-title {
 		width: 55%;
 	}
@@ -316,7 +323,4 @@ ul {
 	.transparent {
 		padding: 5%;
 	}
-	/* .rma-details, .lu-details, .tw-details {
-		width: 100%;
-	} */
 }

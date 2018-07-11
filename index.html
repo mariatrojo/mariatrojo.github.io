@@ -64,29 +64,29 @@
 
 
 			//TEST
-			$(".rma-details").hide();
-			$( "#rma-project" ).click(function() {
-				$( ".rma-details" ).slideToggle( "slow" );
-			});
-			$( ".rma-details" ).click(function() {
-				$( ".rma-details" ).slideToggle( "slow" );
-			});
+			// $(".rma-details").hide();
+			// $( "#rma-project" ).click(function() {
+			// 	$( ".rma-details" ).slideToggle( "slow" );
+			// });
+			// $( ".rma-details" ).click(function() {
+			// 	$( ".rma-details" ).slideToggle( "slow" );
+			// });
 
-			$(".lu-details").hide();
-			$( "#lu-project" ).click(function() {
-				$( ".lu-details" ).slideToggle( "slow" );
-			});
-			$( ".lu-details" ).click(function() {
-				$( ".lu-details" ).slideToggle( "slow" );
-			});
+			// $(".lu-details").hide();
+			// $( "#lu-project" ).click(function() {
+			// 	$( ".lu-details" ).slideToggle( "slow" );
+			// });
+			// $( ".lu-details" ).click(function() {
+			// 	$( ".lu-details" ).slideToggle( "slow" );
+			// });
 
-			$(".tw-details").hide();
-			$( "#tw-project" ).click(function() {
-				$( ".tw-details" ).slideToggle( "slow" );
-			});
-			$( ".tw-details" ).click(function() {
-				$( ".tw-details" ).slideToggle( "slow" );
-			});
+			// $(".tw-details").hide();
+			// $( "#tw-project" ).click(function() {
+			// 	$( ".tw-details" ).slideToggle( "slow" );
+			// });
+			// $( ".tw-details" ).click(function() {
+			// 	$( ".tw-details" ).slideToggle( "slow" );
+			// });
 
 		});
 
@@ -104,13 +104,13 @@
 					<span class="icon-bar"></span>
 				</button>
 				<div class="navbar-right">
-					<a class="navbar-brand" rel="home" href="files/mariarojo-resume.pdf" target="_blank">
+					<a class="navbar-brand" rel="home" href="files/mariarojo-resume.pdf" target="_blank" title="Maria T. Rojo's Resume PDF">
 						<img id="icon-1" class="hover" src="img/cv-icon.png" alt="resume">
 					</a>
-					<a class="navbar-brand" rel="home" href="https://github.com/mariatrojo" target="_blank">
+					<a class="navbar-brand" rel="home" href="https://github.com/mariatrojo" target="_blank" title="Maria T. Rojo's Github Profile">
 						<img id="icon-2" class="hover" src="img/github.png" alt="github">
 					</a>
-					<a class="navbar-brand" rel="home" href="https://www.linkedin.com/in/mariatrojo/" target="_blank">
+					<a class="navbar-brand" rel="home" href="https://www.linkedin.com/in/mariatrojo/" target="_blank" title="Maria T. Rojo's LinkedIn Profile">
 						<img id="icon-3" class="hover" src="img/linkedin.png" alt="linkedin">
 					</a>
 				</div>
@@ -142,7 +142,7 @@
 			<img class="section-title" src="img/about.png" alt="about">
 
 			<p class="right-text about-text">
-					I'm a recently graduated Web Developer from Coding Dojo, 
+					I'm a recently graduated Web Developer based in the Bay Area, California, 
 					dedicating over 1000 hours in 3 full stacks that include the following 
 					technologies: Python, MEAN (MongoDB, Express, Angular, Node.js), iOS, and 
 					currently learning React. With each stack I have built numerous web 
@@ -158,49 +158,26 @@
 			</p>
 		</div>
 
+
 		<div class="container transparent" id="projects">
 			<img class="section-title" src="img/projects.png" alt="projects">
 
-			<div class="row scrollable-section">
 
-				<div class="col-md-4 fixed-column">
 
+			<div class="row row-projects">
+				<div class="col-sm-6">
+
+				
 					<div class="tipVisible">
-						<div class="tipIcon">
+						<!-- <div class="tipIcon">
 							<div class="plusIcon" id="lu-project"></div>
-						</div>
+						</div> -->
 						<h3 class="tipTitle">Learnup Board</h3>
-						<a class="pull-right" href="https://github.com/mariatrojo/LearnUpProject" target="_blank">
+						<!-- <a class="pull-right" href="https://github.com/mariatrojo/LearnUpProject" target="_blank">
 							Github
-						</a>
+						</a> -->
 					</div>
-
-					<div class="lu-details container">
-						<p class="description-text">
-							An application for a nonprofit business called LearnUp, 
-							helping students with dyslexia learn how to read with 
-							a digitized version of their magnetic tile board product.
-						</p>
-						<p>
-							<span class="project-category">Key Features:</span> 
-							After login, a teacher can generate a board that they and a student
-							can access. Socket.io allows them to move tiles around the board live.
-							Indicator lights let a teacher know when a student is active, inactive,
-							or if they have closed the window.
-						<p>
-							<span class="project-category">My Role:</span> Built the capability
-							for tiles to be duplicated, restricted the tiles from moving off of
-							the board, and implemented unique tile IDs to ensure correct tile 
-							selection. 
-						</p>
-						<p>
-							<span class="project-category">Details:</span> Built with a team of 6
-							developers, using JavaScript, MongoDB, Express, Node.js, Socket.io, 
-							JQuery, Boostrap, Interact.js, and Visual Studio Code.
-						</p>
-					</div>
-
-					
+							
 					<div id="myCarousel2" class="carousel slide slide-width" data-ride="carousel" data-interval="15000">
 						<ol class="carousel-indicators">
 							<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -256,44 +233,52 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
-					
 				</div>
 
-				<div class="col-md-4 fixed-column">
-
-					<div class="tipVisible">
-						<div class="tipIcon" id="tw-project">
-							<div class="plusIcon"></div>
-						</div>
-						<h3 class="tipTitle">The Wall</h3>
-						
-						<a class="pull-right" href="https://github.com/mariatrojo/The_Wall" target="_blank">
+				<div class="col-sm-6">
+					<div class="lu-details">
+						<p class="description-text">
+							An application for a nonprofit business called LearnUp, 
+							helping students with dyslexia learn how to read with 
+							a digitized version of their magnetic tile board product.
+						</p>
+						<p>
+							<span class="project-category">Key Features:</span> 
+							After login, a teacher can generate a board that they and a student
+							can access. Socket.io allows them to move tiles around the board live.
+							Indicator lights let a teacher know when a student is active, inactive,
+							or if they have closed the window.
+						<p>
+							<span class="project-category">My Role:</span> Built the capability
+							for tiles to be duplicated, restricted the tiles from moving off of
+							the board, and implemented unique tile IDs to ensure correct tile 
+							selection. 
+						</p>
+						<p>
+							<span class="project-category">Details:</span> Built with a team of 6
+							developers, using JavaScript, MongoDB, Express, Node.js, Socket.io, 
+							JQuery, Boostrap, Interact.js, and Visual Studio Code.
+						</p>
+						<a class="align-left" href="https://github.com/mariatrojo/LearnUpProject" target="_blank">
 							Github
 						</a>
+					</div>
+				
+				</div>
 
-						<a class="pull-right" href="http://18.216.43.171/" target="_blank">
-							Website 
-						</a>
+				
+			</div>
+
+			<div class="row row-projects">
+				<div class="col-sm-6">
+					<div class="tipVisible">
+						<!-- <div class="tipIcon" id="tw-project">
+							<div class="plusIcon"></div>
+						</div> -->
+						<h3 class="tipTitle">The Wall</h3>
+						
 					</div>
-	
-	
-					<div class="tw-details">
-						<p class="description-text">
-							A full CRUD application using an MVC framework.
-						</p>
-						<p>
-							<span class="project-category">Key Features:</span> A user can register for the application
-							and sign in with: their email, first and last name, a password, with password confirmation. 
-							All forms have validations. Admins can add/remove users, and edit other users' information
-							(email address, first and last name, user level). All users can edit their own information
-							as well as their own user description. They can also leave messages to other users, which
-							will be shown in descending order. Users can also leave a comment for a message.
-						<p>
-							<span class="project-category">Details:</span> Built independently with Python, Django,
-							SQLite, Responsive Web Design, Bootstrap 4, JQuery, Jinja and Visual Studio Code. 
-						</p>
-					</div>
-	
+			
 					<div id="myCarousel3" class="carousel slide slide-width" data-ride="carousel" data-interval="15000">
 						<ol class="carousel-indicators">
 							<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
@@ -353,42 +338,48 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
-						
-	
 				</div>
 
-				<div class="col-md-4 fixed-column">
+				<div class="col-sm-6">
+					<div class="tw-details">
 
-					<div class="tipVisible">
-						<div class="tipIcon" id="rma-project">
-							<div class="plusIcon"></div>
-						</div>
-						<h3 class="tipTitle">Record My Accident</h3>
-						<a class="pull-right" href="https://github.com/kegplant/Hackathon_iOS_CoreLocation" target="_blank">
-							Github
-						</a>
-					</div>
-
-
-					<div class="rma-details">
 						<p class="description-text">
-							An iOS app to help keep track of key information
-							when involved with a car accident. 
+							A full CRUD application using an MVC framework.
 						</p>
 						<p>
-							<span class="project-category">Key Features:</span> A user can take two photos of the accident, 
-							type in the other driver’s information, and drop a pin on 
-							the map of the current location. Data will be saved in the 
-							iOS device’s photo library, and in the app.
+							<span class="project-category">Key Features:</span> A user can register for the application
+							and sign in with: their email, first and last name, a password, with password confirmation. 
+							All forms have validations. Admins can add/remove users, and edit other users' information
+							(email address, first and last name, user level). All users can edit their own information
+							as well as their own user description. They can also leave messages to other users, which
+							will be shown in descending order. Users can also leave a comment for a message.
 						<p>
-							<span class="project-category">My Role:</span> Designed the logo and front end, created the forms 
-							for record keeping with the ability to save, and implemented 
-							the scrolling ability.
+							<span class="project-category">Details:</span> Built independently with Python, Django,
+							SQLite, Responsive Web Design, Bootstrap 4, JQuery, Jinja and Visual Studio Code. 
 						</p>
-						<p>
-							<span class="project-category">Details:</span> Built with a team of 3 developers in one day, 
-							using Swift 4, Xcode, CoreData, CoreLocation, MapKit and ImagePicker.
-						</p>
+
+						<div class="align-left">
+							<a href="http://18.216.43.171/" target="_blank">
+								Website 
+							</a>
+							<a href="https://github.com/mariatrojo/The_Wall" target="_blank">
+								Github
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row row-projects">
+
+				<div class="col-sm-6">
+					<div class="tipVisible">
+						<!-- <div class="tipIcon" id="rma-project">
+							<div class="plusIcon"></div>
+						</div> -->
+						<h3 class="tipTitle">Record My Accident</h3>
+
 					</div>
 
 					<div id="myCarousel1" class="carousel slide slide-width" data-ride="carousel" data-interval="15000">
@@ -437,7 +428,38 @@
 						</a>
 					</div>
 				</div>
+
+				<div class="col-sm-6">
+
+					<div class="rma-details">
+						<p class="description-text">
+							An iOS app to help keep track of key information
+							when involved with a car accident. 
+						</p>
+						<p>
+							<span class="project-category">Key Features:</span> A user can take two photos of the accident, 
+							type in the other driver’s information, and drop a pin on 
+							the map of the current location. Data will be saved in the 
+							iOS device’s photo library, and in the app.
+						<p>
+							<span class="project-category">My Role:</span> Designed the logo and front end, created the forms 
+							for record keeping with the ability to save, and implemented 
+							the scrolling ability.
+						</p>
+						<p>
+							<span class="project-category">Details:</span> Built with a team of 3 developers in one day, 
+							using Swift 4, Xcode, CoreData, CoreLocation, MapKit and ImagePicker.
+						</p>
+
+						<a class="align-left" href="https://github.com/kegplant/Hackathon_iOS_CoreLocation" target="_blank">
+							Github
+						</a>
+					</div>
+				
+				</div>
+
 			</div>
+
 		</div>
 
 		<div class="container skills" id="skills">
@@ -519,6 +541,9 @@
 		</div>
 
 		<div class="container transparent" id="contact">
+			<h2 class="contact-title">
+				Thanks for visiting! 
+			</h2>
 				<img class="section-title" src="img/contact.png" alt="Contact">
 
 				<form action=mailto:mariatrojo@gmail.com method="POST">
