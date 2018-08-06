@@ -361,6 +361,6 @@ ul {
 
 @media (max-width: 640px) {
 	body {
-		background-attachment:initial;
+		background-attachment:fixed;
 	}
 }
