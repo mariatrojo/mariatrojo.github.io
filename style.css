@@ -29,7 +29,7 @@ h3 {
 }
 a:link {
 	color: white;
-	text-decoration: underline;
+	text-decoration: none !important;
 }
 .icon-contact-link:link {
 	text-decoration: none;
