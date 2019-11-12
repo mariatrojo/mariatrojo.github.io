@@ -23,27 +23,35 @@ body{
 td {
 	padding: 20px 5px 0px 5px;
 }
-h3 {
-	margin-top: 0px;
+h3,
+a:link,
+.navbar-inverse .navbar-nav li .myNavbar-link:hover,
+.button-link {
 	color: white;
 }
+h3 {
+	margin-top: 0px;
+}
 a:link {
-	color: white;
 	text-decoration: none !important;
 }
 .icon-contact-link:link {
-	text-decoration: none;
 	position: relative;
 	bottom: 10px;
 	padding-right: 5px;
 }
-a:visited {
+a:visited,
+a:hover,
+h4, 
+.project-category,
+.tipTitle,
+.copyright,
+.contact-title  {
 	color: rgb(184, 110, 83);
 }
-a:hover {
-	color: rgb(184, 110, 83);
-}
-a:active {
+.icon-contact-link:link, a:active,
+.navbar-inverse .navbar-nav .myNavbar-link, 
+.navbar-inverse .navbar-nav .myNavbar-link:focus {
 	text-decoration: none;
 }
 
@@ -53,22 +61,17 @@ a:active {
 	border: 0px;
 	box-shadow:0px 0px 10px rgb(185, 185, 185);
 }
-.navbar-inverse .navbar-nav li.active a{ 
+.navbar-inverse .navbar-nav li.active a, 
+.navbar-inverse .navbar-nav .myNavbar-link:active, 
+.navbar-inverse .navbar-nav .myNavbar-link:visited{ 
     background: rgb(184, 110, 83) !important; 
 }
-.navbar-inverse .navbar-nav .myNavbar-link, .navbar-inverse .navbar-nav .myNavbar-link:focus {
+.navbar-inverse .navbar-nav .myNavbar-link, 
+.navbar-inverse .navbar-nav .myNavbar-link:focus {
 	color: black;
-	text-decoration: none;
 } 
-.navbar-inverse .navbar-nav .myNavbar-link:active {
-	background: rgb(184, 110, 83);
-}
-.navbar-inverse .navbar-nav .myNavbar-link:visited {
-	background: rgb(184, 110, 83);
-}
 .navbar-inverse .navbar-nav li .myNavbar-link:hover{
 	background: rgb(224, 206, 191);
-	color: white;
 }
 .hover {
 	height: 25px;
@@ -80,6 +83,7 @@ a:active {
 }
 .main-logo {
 	width: 100px;
+	animation-duration: 3s;
 }
 .name {
 	width: 350px;
@@ -89,9 +93,14 @@ a:active {
 	font-size: 20px;
 	font-weight: 800;
 }
+.white,
+.skills,
+.transparent,
+.copyright {
+	width: 100%;
+}
 .white {
 	background: white;
-	width: 100%;
 	padding: 100px 100px 100px 20%;
 	text-align: right;
 	box-shadow:0px 0px 10px rgb(185, 185, 185);
@@ -101,7 +110,6 @@ a:active {
 }
 .skills {
 	background: white;
-	width: 100%;
 	padding: 100px 100px;
 	text-align: right;
 	box-shadow:0px 0px 10px rgb(185, 185, 185);
@@ -123,12 +131,10 @@ a:active {
 	padding-top: 25px;
 }
 .transparent {
-	width: 100%;
 	padding: 150px 100px 150px 100px;
 	text-align: left;
 }
 h4, .project-category {
-	color: rgb(184, 110, 83);
 	font-weight: 700;
 }
 ul {
@@ -155,7 +161,6 @@ ul {
 .button-link {
 	width: 100px;
 	background-color: rgb(184, 110, 83);
-	color: white;
 	text-align: center;
 }
 .slide-width {
@@ -196,9 +201,13 @@ ul {
 	margin-bottom: 5px;
 }
 
-.project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
+.project-gif, 
+.rma-details, 
+.lu-details, 
+.tw-details, 
+.tipVisible, 
+.slide-width {
 	width: 500px;
-	/* width: 105%; */
 }
 .wall-height {
 	height: 50px;
@@ -210,8 +219,9 @@ ul {
 
 /* SLIDE OUT INFO */
 
-.rma-details, .lu-details, .tw-details {
-	/* background-color: red; */
+.rma-details, 
+.lu-details, 
+.tw-details {
 	padding: 30px 20px 10px 20px;
 	height: 325px;
 }
@@ -228,73 +238,19 @@ ul {
 
 .tipTitle{
 	float:left;
-	color: rgb(184, 110, 83);
 	font-size:25px;
-	font-weight:bold;
+	font-weight: bold;
 	white-space:nowrap;
 	line-height:22px;
 }
 
-.main {
-	margin-top: 0px;
-}
-
-.tipIcon{
-	width:21px;
-	height:21px;
-	float:left;
-	background-color:rgb(184, 110, 83);
-	margin-right:8px;
-	
-	/* CSS3 Rounded corners */
-	
-	-moz-border-radius:1px;
-	-webkit-border-radius:1px;
-	border-radius:1px;
-}
-
-.plusIcon{
-	width:13px;
-	height:13px;
-	background:url('img/plus.gif') no-repeat center center;
-	margin:4px;
-	
-	/* Defining a CSS3 animation. Currently only works in Chrome and Safari */
-	-webkit-transition: -webkit-transform 0.2s linear;
-	-moz-transition: -moz-transform 0.2s linear;
-	transition: transform 0.2s linear;
-}
-
-.slideOutTip.isOpened{ z-index:10000; }
-
-.slideOutTip.isOpened .plusIcon{
-	/* Applying a CSS3 rotation  to the opened slideouts*/
-	-moz-transform:rotate(45deg);
-	-webkit-transform:rotate(45deg);
-	transform:rotate(45deg);
-}
-
 .copyright {
 	background: white;
-	width: 100%;
 	padding: 20px;
-	color: rgb(184, 110, 83);
 	text-align: center;
 	font-weight: bold;
 }
 
-.contact-title {
-	color: rgb(184, 110, 83);
-	/* text-shadow:
-	#FFF 0px 0px 1px,
-	#FFF 0px 0px 1px,
-	#FFF 0px 0px 1px,
-	#FFF 0px 0px 1px,
-	#FFF 0px 0px 1px,
-	#FFF 0px 0px 1px;
-    -webkit-font-smoothing: antialiased; */
-
-}
 .contact-note {
 	padding-top: 10px;
 	padding-bottom: 50px;
@@ -338,13 +294,18 @@ ul {
 	}
 	.project-gif, .rma-details, .lu-details, .tw-details, .tipVisible, .slide-width {
 		max-width: 500px;
-		width: 100%;
 	}
 	.rma-details, .lu-details, .tw-details {
 		height: auto;
 		padding: 0px;
 	}
-	.col-sm-6 {
+	.col-sm-6, 
+	.project-gif, 
+	.rma-details, 
+	.lu-details, 
+	.tw-details, 
+	.tipVisible, 
+	.slide-width {
 		width: 100%;
 	}
 }
